@@ -1,13 +1,20 @@
+@color-primario:#333333;
+@color-claro:#fff;
+@color-secundario:#8841da;
+@color-alternativo:#012179;
+@tipografia1:'Oswald',sans-serif;
+@tipografia2:'Lato', sans-serif;
+@font-size-base:18px;
 *{
-	box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
-body {
-	margin: 0;
-	font-family: 'Lato', sans-serif;
+body{
+    font-family: @tipografia2;
+    line-height: @font-size-base + 12%;
 }
 
-h1,h2,h3 {
-	font-family: 'Oswald', sans-serif;
-	text-transform: uppercase;
-	margin: 0;
+h1,h2,h3{
+    font-family: @tipografia1;
+    text-transform: uppercase;
 }
