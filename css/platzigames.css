@@ -1,3 +1,12 @@
+.sombra-caja {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+          box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+}
+.Oswald {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -10,28 +19,34 @@ body {
 h1,
 h2,
 h3 {
+  margin: 0;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .intro {
-  width: 1340px;
+  width: 100%;
   height: 650px;
-  padding: 10px;
   margin: 0 auto;
   position: relative;
+  background-color: #fff;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+          box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
 }
 .intro__imagen {
-  width: 1320px;
+  width: 100%;
   position: absolute;
+  padding: 10px;
 }
 .intro__imagen img {
-  width: 1320px;
+  width: 100%;
   height: 624px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .intro__contenido {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   position: absolute;
   top: 156px;
@@ -49,7 +64,7 @@ h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-size: 50px;
-  line-height: 68px;
+  line-height: 60px;
 }
 .intro__autor {
   width: 150px;
@@ -77,16 +92,48 @@ h3 {
   max-width: 660px;
   margin: 0 auto;
   text-align: justify;
-  line-height: 28px;
 }
 .articulo--principal__intro {
-  font-size: 26px;
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 20px;
 }
 .articulo--principal h2 {
   margin: 40px 0 40px 0;
-  font-size: 50px;
   text-align: center;
+  font-size: 50px;
+  line-height: 60px;
 }
 .articulo--principal h3 {
   color: #8841da;
+  margin: 20px 0px;
+}
+.contenedor--cajas {
+  width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contenedor--cajas .caja {
+  max-width: 430px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+          box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.5);
+}
+.contenedor--cajas .caja__contenido {
+  padding: 25px;
+  background-color: #fff;
+}
+.contenedor--cajas .caja span {
+  color: #8841da;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.contenedor--cajas .caja a {
+  text-decoration: none;
+  color: #012179;
 }
